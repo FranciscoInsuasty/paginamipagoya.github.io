@@ -1,0 +1,126 @@
+body {
+    background-image: url('Fondo\ Login.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    transition: 1s;
+    margin: 0;
+    opacity: 1.0; /* Añadida opacidad al fondo pero por alguna razon opaca las letras y no el fondo */
+}
+
+/* Añadido estilo para hacer la página responsive */
+@media screen and (max-width: 768px) {
+    .box {
+        flex-basis: 100%; /* Cambiar a 100% para apilar las cajas en dispositivos pequeños */
+        margin-bottom: 20px; /* Añadir espacio entre las cajas apiladas */
+    }
+    .box-container {
+        flex-direction: column; /* Cambiar a dirección de columna para dispositivos pequeños */
+    }
+ }
+
+.header {
+        background: rgba(0, 0, 0, 0.125);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+         max-width: 100%;
+    }
+    
+    .logo a {
+        text-decoration: none;
+        font-size: 24px;
+        color: #333;
+         max-width: 100%;
+    }
+    
+    .navbar {
+        display: flex
+        max-width; 
+    }
+    
+    .navbar a {
+        text-decoration: none;
+        color: #333;
+        margin-right: 20px;
+         max-width: 90%;  
+    }
+
+.content {
+    padding-top: 90px;
+    max-width: 90%;
+}
+
+.section {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 20px;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.btn-home .btn, .btn {
+    text-decoration: none;
+    background-color: #36f44698;
+    color: #fff;
+    padding: 10px 20px;
+    font-weight: 400;
+    border: none;
+    margin-right: 10px;
+}
+
+.service-image {
+    max-width: 70%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.box {
+    flex-basis: 20%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box i {
+    font-size: 1em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about-section p, .price-section p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.contact-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.whatsapp-image {
+    max-width: 90px;
+    height: auto;
+    margin: 20px;
+}
